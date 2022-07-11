@@ -1,0 +1,107 @@
+.property-card {
+    color: var(--gray);
+
+    .card {
+        background-color: #ffffff;
+        border: 1px solid rgba(114, 109, 109, 0.5);
+        border-radius: 6px;
+        font-size: 14px;
+
+        &__wrapper {
+            padding: 15px;
+            display: flex;
+            gap: 20px;
+        }
+
+        &__image {
+            flex: 0 0 200px;
+        }
+
+        &__content {
+            flex: 1 1 auto;
+        }
+
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        &__title {
+            color: var(--mainColor);
+            margin-bottom: 8px;
+        }
+
+        &__subtitle {
+            padding-left: 5px;
+        }
+
+        &__info {
+            display: flex;
+            margin-bottom: 15px;
+            gap: 15px;
+        }
+
+        &__text {
+            p {
+                margin-bottom: 8px;
+            }
+        }
+
+        &__read-more, 
+        &__read-less  {
+            color: var(--mainColor);
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        &__price {
+            flex: 0 0 15%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: end;
+            font-size: 12px;
+            font-weight: 600;
+            &-value {
+                color: var(--green);
+                font-size: 16px;
+                font-weight: 900;
+            }
+        }
+
+        &__button {
+            max-width: 150px;
+            width: 100%;
+            margin-left: auto;
+        }
+
+        .score {
+            display: flex;
+            gap: 10px;
+
+            &__content {
+                &-title {
+                    color: var(--black);
+                    margin-bottom: 5px;
+                }
+
+                &-text {
+                    color: var(--gray);
+                    font-size: 12px;
+                }
+            }
+
+            &__badge {
+                background-color: var(--mainColor);
+                border-radius: 6px 6px 6px 0;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--black);
+            }
+        }
+    }
+}

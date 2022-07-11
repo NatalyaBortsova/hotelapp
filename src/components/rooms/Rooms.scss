@@ -1,0 +1,70 @@
+.rooms {
+    color: #000000;
+    padding: 60px 0;
+
+    &__list {
+        display: flex;
+        gap: 10px;
+    }
+
+
+    &__item {
+        flex: 1;
+
+    }
+
+    &__image {
+        margin-bottom: 15px;
+        max-width: 300px;
+        width: 100%;
+        cursor: pointer;
+
+        img {
+            border-radius: 15px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    &__bottom {
+        max-width: 300px;
+        width: 100%;
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: minmax(100px, 1fr) minmax(30px, auto);
+    }
+
+    &__name {
+        cursor: pointer;
+        display: block;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    &__city {
+        display: block;
+        cursor: pointer;
+        color: #b5aeae;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    &__price {
+        display: block;
+    }
+
+
+    &__rating {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__button {
+        color: #ffffff;
+        background-color: #003580;
+        border-radius: 8px 8px 8px 0;
+    }
+}

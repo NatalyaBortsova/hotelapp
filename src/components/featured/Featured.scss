@@ -1,0 +1,41 @@
+.featured {
+    padding: 60px 0;
+    color: #000000;
+
+
+    .destination {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        column-gap: 30px;
+        row-gap: 30px;
+
+        &__image {
+            margin-bottom: 15px;
+            max-width: 300px;
+            width: 100%;
+            cursor: pointer;
+
+            img {
+                border-radius: 15px;
+                width: 100%;
+                object-fit: cover;
+            }
+
+        }
+
+        &__title {
+            display: block;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        &__number {
+            color: #b5aeae;
+            cursor: pointer;
+        }
+    }
+
+}

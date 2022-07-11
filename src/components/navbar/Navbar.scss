@@ -1,0 +1,32 @@
+.header {
+    background-color: #003580;
+    padding: 15px 0;
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        transition: color 0.3s ease 0s;
+
+        &:hover {
+            color: #b4c5de;
+        }
+
+        &__list {
+            display: flex;
+        }
+
+        &__item {
+            &:not(:last-child) {
+                margin-right: 25px;
+            }
+        }
+    }
+
+    .logo {
+        font-weight: 700;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+}

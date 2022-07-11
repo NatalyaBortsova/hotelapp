@@ -1,0 +1,147 @@
+.proposals {
+    position: relative;
+    background-color: #003580;
+    padding: 25px 0 100px;
+
+    &__list {
+        display: flex;
+        gap: 25px;
+        margin-bottom: 50px;
+    }
+
+    &_mode {
+        padding: 25px 0;
+
+        .proposals__list {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: background-color 0.3s ease 0s;
+
+        &:hover {
+            background-color: rgba(12, 43, 87, 0.2);
+        }
+
+        &.active {
+            border: 1px solid #ffffff;
+        }
+
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+    }
+
+    &__button.btn {
+        max-width: 200px;
+        width: 100%;
+        padding: 8px 10px;
+    }
+
+    &__search {
+        max-width: 1024px;
+        width: 1005px;
+        position: absolute;
+        bottom: -25px;
+        height: 48px;
+        background-color: #ffffff;
+        border: 1px solid #febb02;
+        border-radius: 6px;
+        color: #333333;
+        font-weight: 600;
+        padding: 0 10px;
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    &__input {
+        &::placeholder {
+            color: #000000;
+        }
+    }
+
+    &__date {
+        position: absolute;
+        top: 48px;
+    }
+
+    &__options {
+        position: absolute;
+        max-width: 250px;
+        width: 100%;
+        padding: 10px;
+        top: 48px;
+        background-color: #ffffff;
+        color: #b5aeae;
+        border-radius: 6px;
+        -webkit-box-shadow: 1px 9px 19px 2px rgba(0, 0, 0, 0.37);
+        box-shadow: 1px 9px 19px 2px rgba(0, 0, 0, 0.37);
+
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #000000;
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+
+        &-block {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &-button {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #a2badd;
+            cursor: pointer;
+            border-radius: 6px;
+            transform: scale(1);
+
+            &:focus,
+            &:hover {
+                transform: scale(0.95);
+            }
+
+            &:disabled {
+                cursor: not-allowed;
+            }
+        }
+
+        &-text {
+            transition: color 0.3s ease 0s;
+
+            &:hover {
+                color: #003580;
+            }
+        }
+    }
+}

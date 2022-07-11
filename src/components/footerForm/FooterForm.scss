@@ -1,0 +1,50 @@
+.form-block {
+    padding: 60px 0;
+    background-color: #003580;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    &__title {
+        font-weight: 400;
+    }
+    &__subtitle {
+        font-weight: 300;
+        font-size: 25px;      
+    }
+    &__inner {
+        max-width: 550px;
+        width: 100%;
+    }
+    .form {
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 8px;
+        }
+        &__input {
+            background-color: #ffffff;
+            padding: 15px 10px;
+            height: 48px;
+            width: 100%;
+            border-radius: 10px;
+            &-checkbox {
+                margin-right: 10px;
+                width: 15px;
+                height: 15px;
+            }
+        }
+        &__button {
+            padding: 12px;
+            max-width: 140px;
+            width: 100%;
+        }
+        &__bottom {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
